@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/basic-react-forms.iml" filepath="$PROJECT_DIR$/.idea/basic-react-forms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lucid.iml" filepath="$PROJECT_DIR$/.idea/lucid.iml" />
     </modules>
   </component>
 </project>

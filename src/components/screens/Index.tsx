@@ -4,6 +4,7 @@ import { useAuthState } from '~/components/contexts/UserContext';
 import { SignInButton } from '~/components/domain/auth/SignInButton';
 import { SignOutButton } from '~/components/domain/auth/SignOutButton';
 import { Head } from '~/components/shared/Head';
+import { TextInput } from '~/components/shared/TextInput';
 
 function Index() {
   const { state } = useAuthState();
@@ -15,45 +16,75 @@ function Index() {
       <Head title="Lucid" />
       <section className="w-full h-screen bg-center bg-cover bg-[url('assets/bgimg.jpg')]">
         <div className="hero h-screen w-full">
-          <div className="text-center hero-content">
-            <div className="bg-base-300/80 px-16 py-6 rounded drop-shadow-2xl">
-              <h1 className="text-3xl font-bold">Lucid</h1>
-              <p className="my-4 text-lg">Next-Gen Social Media</p>
-              {/*<div className="mt-4 grid gap-2">*/}
-              {/*  {state.state === 'UNKNOWN' ? null : state.state === 'SIGNED_OUT' ? <SignInButton /> : <SignOutButton />}*/}
-              {/*  <button onClick={() => setIsOpen(true)}>Display Dialog</button>*/}
-              {/*</div>*/}
-              <div className="flex space-x-4">
-                <button className="btn btn-primary drop-shadow-md">Sign In</button>
-                <button className="btn btn-outline btn-secondary drop-shadow-md">Sign Up</button>
+          <div className="hero-content">
+            <div className="card w-96 bg-base-100/90 shadow-xl">
+              <div className="card-body items-center text-center">
+                <h1 className="card-title text-3xl uppercase font-bold">Lucid</h1>
+                <p className="mb-3">Next-Gen Social Media</p>
+                <div className="card-actions justify-end">
+                  <label htmlFor="sign-in-modal" className="btn btn-primary drop-shadow-md">
+                    Sign In
+                  </label>
+                  <label htmlFor="sign-up-modal" className="btn btn-outline btn-secondary drop-shadow-md">
+                    Sign Up
+                  </label>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="sign-in-modal" className="modal-toggle" />
+          <div className="modal">
+            <div className="modal-box">
+              <form action="#" method="GET">
+                <h3 className="font-bold text-lg">Sign In</h3>
+                <div className="flex flex-col">
+                  <TextInput type={'text'} placeholder={'Username'} mt={6} required={true} />
+                  <TextInput type={'password'} placeholder={'Password'} mt={2} required={true} />
+                  <label className="label cursor-pointer place-content-start gap-2 mt-1">
+                    <input type="checkbox" className="checkbox checkbox-primary m-0" />
+                    <span className="label-text">Remember me</span>
+                  </label>
+                </div>
+
+                <div className="modal-action mt-4">
+                  <input type="submit" value="Sign In" className="btn btn-primary" />
+                  <label htmlFor="sign-in-modal" className="btn btn-ghost">
+                    Cancel
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <input type="checkbox" id="sign-up-modal" className="modal-toggle" />
+          <div className="modal">
+            <div className="modal-box">
+              <form action="#" method="GET">
+                <h3 className="font-bold text-lg">Sign Up</h3>
+                <div className="flex flex-col">
+                  <TextInput type={'text'} placeholder={'Display name'} mt={6} required={true} />
+                  <TextInput type={'text'} placeholder={'Username'} mt={2} required={true} />
+                  <TextInput type={'email'} placeholder={'E-Mail'} mt={2} required={true} />
+                  <TextInput type={'password'} placeholder={'Password'} mt={2} required={true} />
+                  <TextInput type={'password'} placeholder={'Confirm password'} mt={2} required={true} />
+                  <label className="label cursor-pointer place-content-start gap-2 mt-1">
+                    <input type="checkbox" className="checkbox checkbox-primary m-0" required />
+                    <span className="label-text">I have read and agree to the privacy policy *</span>
+                  </label>
+                </div>
+
+                <div className="modal-action mt-4">
+                  <input type="submit" value="Sign Up" className="btn btn-primary" />
+                  <label htmlFor="sign-up-modal" className="btn btn-ghost">
+                    Cancel
+                  </label>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
-
-      {/*<Dialog*/}
-      {/*  className="flex fixed inset-0 z-10 overflow-y-auto"*/}
-      {/*  initialFocus={completeButtonRef}*/}
-      {/*  open={isOpen}*/}
-      {/*  onClose={() => setIsOpen(false)}*/}
-      {/*>*/}
-      {/*  <div className="flex items-center justify-center min-h-screen w-screen">*/}
-      {/*    <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />*/}
-      {/*    <div className="relative bg-white rounded max-w-120 p-8 mx-auto">*/}
-      {/*      <Dialog.Title>Dialog Title</Dialog.Title>*/}
-      {/*      <Dialog.Description>Dialog description</Dialog.Description>*/}
-      {/*      <button*/}
-      {/*        ref={completeButtonRef}*/}
-      {/*        type="button"*/}
-      {/*        className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"*/}
-      {/*        onClick={() => setIsOpen(false)}*/}
-      {/*      >*/}
-      {/*        Got it, thanks!*/}
-      {/*      </button>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</Dialog>*/}
     </>
   );
 }
