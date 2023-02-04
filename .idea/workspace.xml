@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="165dae09-496e-42f5-bd25-14a82b7ce195" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/router/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/router/Router.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/screens/Index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/Index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/TextInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/TextInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +88,7 @@
       <workItem from="1675412813249" duration="713000" />
       <workItem from="1675413673482" duration="7875000" />
       <workItem from="1675431075065" duration="4833000" />
+      <workItem from="1675517069094" duration="1873000" />
     </task>
     <servers />
   </component>
@@ -122,6 +120,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="461" y="161" width="1057" height="710" key="SettingsEditor/0.0.1920.1032/-1280.149.1280.1024@0.0.1920.1032" timestamp="1675414294683" />
+    <state x="668" y="235" width="583" height="562" key="find.popup" timestamp="1675517898388">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="668" y="235" width="583" height="562" key="find.popup/0.0.1920.1032/-1280.149.1280.1024@0.0.1920.1032" timestamp="1675517898388" />
     <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1675432885319">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

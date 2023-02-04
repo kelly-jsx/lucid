@@ -6,11 +6,20 @@ import { SignOutButton } from '~/components/domain/auth/SignOutButton';
 import { Head } from '~/components/shared/Head';
 import { TextInput } from '~/components/shared/TextInput';
 import { SiGithub } from 'react-icons/all';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Index() {
   const { state } = useAuthState();
   const [isOpen, setIsOpen] = useState(true);
   const completeButtonRef = useRef(null);
+
+  const navigate = useNavigate();
+
+  const handleSignUp = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    navigate('/feed');
+  };
 
   return (
     <>
@@ -51,7 +60,7 @@ function Index() {
           <input type="checkbox" id="sign-in-modal" className="modal-toggle" />
           <div className="modal">
             <div className="modal-box">
-              <form action="#" method="GET">
+              <form action="#" method="GET" onSubmit={handleSignUp}>
                 <h3 className="font-bold text-lg">Sign In</h3>
                 <div className="flex flex-col">
                   <TextInput type={'text'} placeholder={'Username'} mt={'1.5rem'} required={true} />

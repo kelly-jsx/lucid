@@ -1,6 +1,7 @@
 import { Dialog } from '@headlessui/react';
 import { lazy, Suspense, useState } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter } from 'react-router-dom';
+import HomePage from '~/components/screens/HomePage';
 
 const Loading = () => (
   <div className="hero min-h-screen bg-gray-800">
@@ -43,11 +44,16 @@ const InnerRouter = () => {
       children: [
         {
           index: true,
-          element: <IndexScreen />,
+          // element: <IndexScreen />,
+          element: <HomePage />,
         },
         {
           path: '*',
           element: <Page404Screen />,
+        },
+        {
+          path: 'feed',
+          element: <HomePage />,
         },
       ],
     },
