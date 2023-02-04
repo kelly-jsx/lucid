@@ -5,6 +5,7 @@ import { SignInButton } from '~/components/domain/auth/SignInButton';
 import { SignOutButton } from '~/components/domain/auth/SignOutButton';
 import { Head } from '~/components/shared/Head';
 import { TextInput } from '~/components/shared/TextInput';
+import { SiGithub } from 'react-icons/all';
 
 function Index() {
   const { state } = useAuthState();
@@ -15,6 +16,20 @@ function Index() {
     <>
       <Head title="Lucid" />
       <section className="w-full h-screen bg-center bg-cover bg-[url('assets/bgimg.jpg')]">
+        <nav className="navbar bg-base-100/20 rounded-b-lg absolute">
+          <div className="flex-1">
+            <a className="btn btn-ghost normal-case text-xl">Lucid</a>
+          </div>
+          <div className="flex-none">
+            <a
+              href={'https://github.com/kelly-jsx/lucid'}
+              target="_blank"
+              className="btn btn-ghost normal-case text-3xl"
+            >
+              <SiGithub />
+            </a>
+          </div>
+        </nav>
         <div className="hero h-screen w-full">
           <div className="hero-content">
             <div className="card w-96 bg-base-100/90 shadow-xl">
@@ -39,8 +54,8 @@ function Index() {
               <form action="#" method="GET">
                 <h3 className="font-bold text-lg">Sign In</h3>
                 <div className="flex flex-col">
-                  <TextInput type={'text'} placeholder={'Username'} mt={6} required={true} />
-                  <TextInput type={'password'} placeholder={'Password'} mt={2} required={true} />
+                  <TextInput type={'text'} placeholder={'Username'} mt={'1.5rem'} required={true} />
+                  <TextInput type={'password'} placeholder={'Password'} mt={'0.5rem'} required={true} />
                   <label className="label cursor-pointer place-content-start gap-2 mt-1">
                     <input type="checkbox" className="checkbox checkbox-primary m-0" />
                     <span className="label-text">Remember me</span>
@@ -63,11 +78,11 @@ function Index() {
               <form action="#" method="GET">
                 <h3 className="font-bold text-lg">Sign Up</h3>
                 <div className="flex flex-col">
-                  <TextInput type={'text'} placeholder={'Display name'} mt={6} required={true} />
-                  <TextInput type={'text'} placeholder={'Username'} mt={2} required={true} />
-                  <TextInput type={'email'} placeholder={'E-Mail'} mt={2} required={true} />
-                  <TextInput type={'password'} placeholder={'Password'} mt={2} required={true} />
-                  <TextInput type={'password'} placeholder={'Confirm password'} mt={2} required={true} />
+                  <TextInput type={'text'} placeholder={'Display name'} mt={'1.5rem'} required={true} />
+                  <TextInput type={'text'} placeholder={'Username'} mt={'0.5rem'} required={true} />
+                  <TextInput type={'email'} placeholder={'E-Mail'} mt={'0.5rem'} required={true} />
+                  <TextInput type={'password'} placeholder={'Password'} mt={'0.5rem'} required={true} />
+                  <TextInput type={'password'} placeholder={'Confirm password'} mt={'0.5rem'} required={true} />
                   <label className="label cursor-pointer place-content-start gap-2 mt-1">
                     <input type="checkbox" className="checkbox checkbox-primary m-0" required />
                     <span className="label-text">I have read and agree to the privacy policy *</span>

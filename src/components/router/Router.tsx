@@ -2,16 +2,26 @@ import { Dialog } from '@headlessui/react';
 import { lazy, Suspense, useState } from 'react';
 import { Outlet, RouteObject, useRoutes, BrowserRouter } from 'react-router-dom';
 
-const Loading = () => <p className="p-4 w-full h-full text-center">Loading...</p>;
+const Loading = () => (
+  <div className="hero min-h-screen bg-gray-800">
+    <div className="text-center hero-content text-3xl font-bold">
+      <div className={'flex items-center gap-5'}>
+        <div
+          style={{ borderTopColor: 'transparent' }}
+          className="w-16 h-16 border-4 border-t-fuchsia-600 border-primary rounded-full animate-spin"
+        />
+        <p className="text-4xl">Loading...</p>
+      </div>
+    </div>
+  </div>
+);
 
 const IndexScreen = lazy(() => import('~/components/screens/Index'));
 const Page404Screen = lazy(() => import('~/components/screens/404'));
+
 function Layout() {
   return (
     <div>
-      {/*<nav className="p-4 flex items-center justify-between">*/}
-      {/*  <span>Lucid</span>*/}
-      {/*</nav>*/}
       <Outlet />
     </div>
   );
