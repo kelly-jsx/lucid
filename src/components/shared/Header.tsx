@@ -1,12 +1,5 @@
 import { TextInput } from '~/components/shared/TextInput';
 
-type Props = {
-  type: string;
-  placeholder: string;
-  required?: boolean;
-  mt?: string;
-};
-
 export const Header = () => (
   <>
     <div className="navbar bg-base-100 sticky top-0 z-30">

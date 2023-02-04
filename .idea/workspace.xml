@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="165dae09-496e-42f5-bd25-14a82b7ce195" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/router/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/router/Router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/screens/Index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/Index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/screens/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="2LDjz8S7Z1q3665hdeUlzJdeZlD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,6 +73,9 @@
     <property name="ts.external.directory.path" value="C:\kelly-jsx\projekty\projekty\lucid\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\kelly-jsx\projekty\projekty\lucid\src\components\shared\Sidebar" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\kelly-jsx\projekty\projekty\lucid\src\components\screens" />
     </key>
@@ -88,7 +93,7 @@
       <workItem from="1675412813249" duration="713000" />
       <workItem from="1675413673482" duration="7875000" />
       <workItem from="1675431075065" duration="4833000" />
-      <workItem from="1675517069094" duration="1873000" />
+      <workItem from="1675517069094" duration="4396000" />
     </task>
     <servers />
   </component>
