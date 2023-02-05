@@ -21,8 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="165dae09-496e-42f5-bd25-14a82b7ce195" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/screens/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/HomePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Sidebar/SidebarIconButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Sidebar/SidebarIconButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/TextInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/TextInput.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +97,7 @@
       <workItem from="1675413673482" duration="7875000" />
       <workItem from="1675431075065" duration="4833000" />
       <workItem from="1675517069094" duration="4396000" />
+      <workItem from="1675597098784" duration="1129000" />
     </task>
     <servers />
   </component>
@@ -125,10 +129,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="461" y="161" width="1057" height="710" key="SettingsEditor/0.0.1920.1032/-1280.149.1280.1024@0.0.1920.1032" timestamp="1675414294683" />
-    <state x="668" y="235" width="583" height="562" key="find.popup" timestamp="1675517898388">
+    <state x="668" y="235" width="583" height="562" key="find.popup" timestamp="1675597231176">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="668" y="235" width="583" height="562" key="find.popup/0.0.1920.1032/-1280.149.1280.1024@0.0.1920.1032" timestamp="1675517898388" />
+    <state x="668" y="235" width="583" height="562" key="find.popup/0.0.1920.1032/-1280.266.1280.1024@0.0.1920.1032" timestamp="1675597231176" />
     <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1675432885319">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

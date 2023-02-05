@@ -2,14 +2,14 @@ import { TextInput } from '~/components/shared/TextInput';
 
 export const Header = () => (
   <>
-    <div className="navbar bg-base-100 sticky top-0 z-30">
+    <div className="navbar bg-base-100 sticky top-0 z-0">
       <div className="navbar-start">
         <a href={'/'} className="btn btn-ghost normal-case text-xl text-primary">
           Lucid
         </a>
       </div>
       <div className="navbar-center">
-        <TextInput type={'text'} placeholder={'Search...'} />
+        <TextInput type={'text'} placeholder={'Search...'} text={'center'} />
       </div>
       <div className="navbar-end">
         <div className="dropdown dropdown-end">

@@ -10,7 +10,7 @@ export const Sidebar = () => (
           Open drawer
         </label>
       </div>
-      <div className="drawer-side sticky z-0">
+      <div className="drawer-side fixed top-20 z-50">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <div className="menu p-4 pr-28 text-base-content">
           <SidebarButton tipText={'Home'}>
