@@ -3,25 +3,31 @@ import { SidebarButton } from '~/components/shared/Sidebar/SidebarIconButton';
 
 export const Sidebar = () => (
   <>
-    <div className="drawer drawer-mobile">
+    <div className="drawer-mobile drawer">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col items-center justify-center">
-        <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">
-          Open drawer
-        </label>
-      </div>
+      {/*<div className="drawer-content flex flex-col items-center justify-center">*/}
+      {/*  <label htmlFor="my-drawer-2" className="btn-primary drawer-button btn lg:hidden">*/}
+      {/*    Open drawer*/}
+      {/*  </label>*/}
+      {/*</div>*/}
       <div className="drawer-side fixed top-20 z-50">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <div className="menu p-4 pr-28 text-base-content">
           <SidebarButton tipText={'Home'}>
             <AiFillHome className="h-8 w-8" />
           </SidebarButton>
-          <SidebarButton tipText={'Notifications'}>
-            <IoNotifications className="h-8 w-8" />
-          </SidebarButton>
-          <SidebarButton tipText={'Messages'}>
-            <AiFillMessage className="h-8 w-8" />
-          </SidebarButton>
+          <div className="indicator">
+            <span className="badge-primary badge indicator-item cursor-default">2137</span>
+            <SidebarButton tipText={'Notifications'}>
+              <IoNotifications className="h-8 w-8" />
+            </SidebarButton>
+          </div>
+          <div className="indicator">
+            <span className="badge-primary badge indicator-item cursor-default">934</span>
+            <SidebarButton tipText={'Messages'}>
+              <AiFillMessage className="h-8 w-8" />
+            </SidebarButton>
+          </div>
           <SidebarButton tipText={'Bookmarks'}>
             <BsFillBookmarksFill className="h-8 w-8" />
           </SidebarButton>
