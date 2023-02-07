@@ -28,11 +28,11 @@ export const PostInput = () => {
 
   return (
     <>
-      <form>
-        <div className="mb-4 w-full rounded-lg bg-base-200" style={parentStyle}>
+      <form className="">
+        <div className="mb-4 w-full rounded-lg bg-base-200 drop-shadow-lg" style={parentStyle}>
           <div className="rounded-t-lg px-4 py-2">
-            <label htmlFor="comment" className="sr-only">
-              Your comment
+            <label htmlFor="post" className="sr-only">
+              Your post
             </label>
             <textarea
               ref={textAreaRef}
@@ -44,7 +44,7 @@ export const PostInput = () => {
               placeholder="What's on your mind?"
             ></textarea>
           </div>
-          <div className="flex items-center justify-between px-3 py-2">
+          <div className="flex items-center justify-between py-2 pr-2">
             <div className="flex space-x-1 pl-0 sm:pl-2">
               <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
                 <RiAttachment2 className={'h-6 w-6'} />

@@ -21,15 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="165dae09-496e-42f5-bd25-14a82b7ce195" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/screens/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/screens/Index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/screens/Index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Feed/Feed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Feed/Feed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/Feed/PostInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Feed/PostInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Sidebar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/Sidebar/SidebarIconButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Sidebar/SidebarIconButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +76,11 @@
     <property name="ts.external.directory.path" value="C:\kelly-jsx\projekty\projekty\lucid\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\kelly-jsx\projekty\projekty\lucid\src\components\shared\Sidebar" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\kelly-jsx\projekty\projekty\lucid\src\components\screens" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\kelly-jsx\projekty\projekty\lucid\src\components\shared\Sidebar" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -102,7 +98,7 @@
       <workItem from="1675431075065" duration="4833000" />
       <workItem from="1675517069094" duration="4396000" />
       <workItem from="1675597098784" duration="1176000" />
-      <workItem from="1675769851115" duration="8442000" />
+      <workItem from="1675769851115" duration="13662000" />
     </task>
     <servers />
   </component>
@@ -139,9 +135,9 @@
     </state>
     <state x="668" y="235" width="583" height="562" key="find.popup/0.0.1920.1032/-1280.149.1280.1024@0.0.1920.1032" timestamp="1675517898388" />
     <state x="668" y="235" width="583" height="562" key="find.popup/0.0.1920.1032/-1280.266.1280.1024@0.0.1920.1032" timestamp="1675597231176" />
-    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1675769894846">
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1675781851033">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032/-1280.149.1280.1024@0.0.1920.1032" timestamp="1675769894846" />
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032/-1280.149.1280.1024@0.0.1920.1032" timestamp="1675781851033" />
   </component>
 </project>
