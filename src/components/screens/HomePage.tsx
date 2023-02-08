@@ -14,7 +14,7 @@ function HomePage() {
         <div className="mx-auto mt-24 w-full md:col-span-2 2xl:w-4/6">
           <Feed />
         </div>
-        <div className="mt-24">dupa</div>
+        <div className="mx-4 mt-24">dupa</div>
       </div>
     </>
   );

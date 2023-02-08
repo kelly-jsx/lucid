@@ -1,18 +1,13 @@
 import React, { useState, CSSProperties, useEffect, useRef } from 'react';
-import {
-  AiFillWarning,
-  GrAttachment,
-  IoEarthSharp,
-  MdHowToVote,
-  RiAttachment2,
-  TbClipboardText,
-} from 'react-icons/all';
+import { AiFillWarning, AiOutlineWarning, IoEarthSharp, RiAttachment2, TbClipboardText } from 'react-icons/all';
+import { TextInput } from '~/components/shared/TextInput';
 
 export const PostInput = () => {
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
   const [text, setText] = useState('');
   const [textAreaHeight, setTextAreaHeight] = useState('auto');
   const [parentHeight, setParentHeight] = useState('auto');
+  const [showCW, setShowCW] = useState(false);
 
   const parentStyle: CSSProperties = {
     minHeight: parentHeight,
@@ -33,11 +28,16 @@ export const PostInput = () => {
     setText(event.target.value);
   };
 
+  const handleCW = () => {
+    showCW ? setShowCW(false) : setShowCW(true);
+  };
+
   return (
     <>
-      <form className="">
-        <div className="mb-4 w-full rounded-lg bg-base-200 drop-shadow-lg" style={parentStyle}>
-          <div className="rounded-t-lg px-4 py-2">
+      <div>
+        <div className="mb-4 hidden w-full rounded-lg bg-base-200 drop-shadow-lg md:block" style={parentStyle}>
+          {showCW ? <TextInput type={'text'} placeholder={'Write your warning here'} /> : null}
+          <div className="px-4 py-2">
             <label htmlFor="post" className="sr-only">
               Your post
             </label>
@@ -59,26 +59,32 @@ export const PostInput = () => {
               >
                 <RiAttachment2 className={'h-6 w-6'} />
               </label>
-              <input id="attachment" type="file" className="hidden" />
+              <input id="attachment" type="file" className="hidden" multiple />
               <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
                 <TbClipboardText className={'h-6 w-6'} />
               </button>
               <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
                 <IoEarthSharp className={'h-6 w-6'} />
               </button>
-              <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
-                <AiFillWarning className={'h-6 w-6'} />
+              <button
+                className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary"
+                onClick={handleCW}
+              >
+                {showCW ? <AiFillWarning className={'h-6 w-6'} /> : <AiOutlineWarning className={'h-6 w-6'} />}
               </button>
               <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
                 EN
               </button>
             </div>
-            <button type="submit" className="btn-primary btn-sm btn inline-flex">
-              Post!
-            </button>
+            <div>
+              <p className={'mr-3 inline-flex font-bold text-neutral-content'}>1000</p>
+              <button type="submit" className="btn-primary btn-sm btn inline-flex">
+                Post!
+              </button>
+            </div>
           </div>
         </div>
-      </form>
+      </div>
     </>
   );
 };
