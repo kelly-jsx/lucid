@@ -1,8 +1,8 @@
-import { Head } from '~/components/shared/Head';
 import { Header } from '~/components/shared/Header';
 import { Sidebar } from '~/components/shared/Sidebar/Sidebar';
 import { Feed } from '~/components/shared/Feed/Feed';
-import { PostInput } from '~/components/shared/Feed/PostInput';
+import { CreateButton } from '~/components/shared/CreateButton';
+import { BottomNav } from '~/components/shared/BottomNav';
 
 function HomePage() {
   return (
@@ -14,7 +14,9 @@ function HomePage() {
         <div className="mx-auto mt-24 w-full md:col-span-2 2xl:w-4/6">
           <Feed />
         </div>
-        <div className="mx-4 mt-24">dupa</div>
+        {/*<div className="mx-4 mt-24">dupa</div>*/}
+        <CreateButton />
+        <BottomNav />
       </div>
     </>
   );

@@ -1,10 +1,10 @@
-import { PostInput } from '~/components/shared/Feed/PostInput';
 import { PostCard } from '~/components/shared/PostCard';
+import { PostInput } from '~/components/shared/PostInput';
 
 export const Feed = () => (
   <>
     <div className="flex flex-col px-4 lg:px-0">
-      <PostInput />
+      <PostInput rowsNumber={3} />
       <PostCard
         displayName={'Ruby Morris'}
         nickname={'rubymorris'}
@@ -13,6 +13,9 @@ export const Feed = () => (
         altImg={'dupa'}
         liked={true}
       />
+      <PostCard displayName={'Henry Matherne'} nickname={'imhenry'} textContent={'i love this app! 😍'} />
+      <PostCard displayName={'Henry Matherne'} nickname={'imhenry'} textContent={'i love this app! 😍'} />
+      <PostCard displayName={'Henry Matherne'} nickname={'imhenry'} textContent={'i love this app! 😍'} />
       <PostCard displayName={'Henry Matherne'} nickname={'imhenry'} textContent={'i love this app! 😍'} />
     </div>
   </>

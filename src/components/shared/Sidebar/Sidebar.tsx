@@ -22,6 +22,12 @@ export const Sidebar = ({ notifyCount, messCount }: Props) => (
             <AiFillHome className="h-8 w-8" />
           </SidebarButton>
           <div className="indicator">
+            {messCount ? <span className="badge-primary badge indicator-item cursor-default">{messCount}</span> : ''}
+            <SidebarButton tipText={'Messages'}>
+              <AiFillMessage className="h-8 w-8" />
+            </SidebarButton>
+          </div>
+          <div className="indicator">
             {notifyCount ? (
               <span className="badge-primary badge indicator-item cursor-default">{notifyCount}</span>
             ) : (
@@ -30,12 +36,6 @@ export const Sidebar = ({ notifyCount, messCount }: Props) => (
 
             <SidebarButton tipText={'Notifications'}>
               <IoNotifications className="h-8 w-8" />
-            </SidebarButton>
-          </div>
-          <div className="indicator">
-            {messCount ? <span className="badge-primary badge indicator-item cursor-default">{messCount}</span> : ''}
-            <SidebarButton tipText={'Messages'}>
-              <AiFillMessage className="h-8 w-8" />
             </SidebarButton>
           </div>
           <SidebarButton tipText={'Bookmarks'}>

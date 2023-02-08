@@ -2,7 +2,11 @@ import React, { useState, CSSProperties, useEffect, useRef } from 'react';
 import { AiFillWarning, AiOutlineWarning, IoEarthSharp, RiAttachment2, TbClipboardText } from 'react-icons/all';
 import { TextInput } from '~/components/shared/TextInput';
 
-export const PostInput = () => {
+type Props = {
+  rowsNumber?: number;
+};
+
+export const PostInput = ({ rowsNumber }: Props) => {
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
   const [text, setText] = useState('');
   const [textAreaHeight, setTextAreaHeight] = useState('auto');
@@ -35,7 +39,7 @@ export const PostInput = () => {
   return (
     <>
       <div>
-        <div className="mb-4 hidden w-full rounded-lg bg-base-200 drop-shadow-lg md:block" style={parentStyle}>
+        <div className="mb-4 w-full rounded-lg bg-base-200 drop-shadow-lg" style={parentStyle}>
           {showCW ? <TextInput type={'text'} placeholder={'Write your warning here'} /> : null}
           <div className="px-4 py-2">
             <label htmlFor="post" className="sr-only">
@@ -44,12 +48,12 @@ export const PostInput = () => {
             <textarea
               ref={textAreaRef}
               id="post"
-              rows="3"
+              rows={rowsNumber}
               style={textAreaStyle}
               onChange={onChangeHandler}
               className="textarea-ghost textarea h-fit h-full w-full resize-none border-0 px-0 focus:bg-base-200 focus:outline-none"
               placeholder="What's on your mind?"
-            ></textarea>
+            />
           </div>
           <div className="flex items-center justify-between py-2 pr-2">
             <div className="flex space-x-1 pl-0 sm:pl-2">
