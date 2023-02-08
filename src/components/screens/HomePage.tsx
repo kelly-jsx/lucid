@@ -9,12 +9,12 @@ function HomePage() {
     <>
       {/*<Head title={'The page is not found'}></Head>*/}
       <Header />
-      <div className="grid grid-cols-3">
-        <Sidebar />
-        <div className="col-span-1 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-4">
+        <Sidebar notifyCount={2137} messCount={934} />
+        <div className="mx-auto mt-24 w-full md:col-span-2 2xl:w-4/6">
           <Feed />
         </div>
-        <div>dupa</div>
+        <div className="mt-24">dupa</div>
       </div>
     </>
   );

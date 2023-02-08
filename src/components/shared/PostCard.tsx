@@ -14,10 +14,11 @@ type Props = {
   nickname: string;
   textContent: string;
   imgUrl?: string;
+  altImg?: string;
 };
 
-export const PostCard = ({ displayName, nickname, textContent, imgUrl }: Props) => (
-  <div className="mb-4 w-full rounded-lg bg-base-200 drop-shadow-lg ">
+export const PostCard = ({ displayName, nickname, textContent, imgUrl, altImg }: Props) => (
+  <div className="mb-5 block w-full rounded-lg bg-base-200 drop-shadow-lg">
     <div className="rounded-t-lg px-4 py-2">
       <div className="flex w-full justify-between hover:cursor-pointer">
         <div className="flex">
@@ -29,14 +30,16 @@ export const PostCard = ({ displayName, nickname, textContent, imgUrl }: Props) 
             <p className="text-neutral-content">@{nickname}</p>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center text-neutral-content">
           <IoEarthSharp />
           <p className="ml-1">2 min ago</p>
         </div>
       </div>
-      <div className="mt-2">
+      <div className="mt-4 bg-cover">
         <p>{textContent}</p>
-        {imgUrl ? <img alt={'image'} src={imgUrl} className="mx-auto mt-3 rounded" /> : null}
+        {imgUrl ? (
+          <img alt={altImg} src={imgUrl} className="mx-auto mt-2  max-h-96 w-full rounded-lg object-cover" />
+        ) : null}
       </div>
     </div>
     <div className="flex justify-around py-2 px-0">

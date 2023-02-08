@@ -25,6 +25,7 @@
       <change beforePath="$PROJECT_DIR$/src/components/shared/Feed/Feed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Feed/Feed.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/Feed/PostInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Feed/PostInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/PostCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/PostCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/shared/Sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/Sidebar/Sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +99,8 @@
       <workItem from="1675431075065" duration="4833000" />
       <workItem from="1675517069094" duration="4396000" />
       <workItem from="1675597098784" duration="1176000" />
-      <workItem from="1675769851115" duration="13662000" />
+      <workItem from="1675769851115" duration="13701000" />
+      <workItem from="1675856728646" duration="4576000" />
     </task>
     <servers />
   </component>

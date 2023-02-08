@@ -2,7 +2,7 @@ import { TextInput } from '~/components/shared/TextInput';
 
 export const Header = () => (
   <>
-    <div className="navbar sticky top-0 z-20 bg-base-100">
+    <div className="navbar fixed top-0 z-20 bg-base-100">
       <div className="navbar-start">
         <a href={'/'} className="btn-ghost btn text-xl normal-case text-primary">
           Lucid

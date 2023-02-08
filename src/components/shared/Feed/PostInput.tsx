@@ -1,5 +1,12 @@
 import React, { useState, CSSProperties, useEffect, useRef } from 'react';
-import { AiFillWarning, GrAttachment, IoEarthSharp, MdHowToVote, RiAttachment2 } from 'react-icons/all';
+import {
+  AiFillWarning,
+  GrAttachment,
+  IoEarthSharp,
+  MdHowToVote,
+  RiAttachment2,
+  TbClipboardText,
+} from 'react-icons/all';
 
 export const PostInput = () => {
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
@@ -50,7 +57,7 @@ export const PostInput = () => {
                 <RiAttachment2 className={'h-6 w-6'} />
               </button>
               <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
-                <MdHowToVote className={'h-6 w-6'} />
+                <TbClipboardText className={'h-6 w-6'} />
               </button>
               <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
                 <IoEarthSharp className={'h-6 w-6'} />

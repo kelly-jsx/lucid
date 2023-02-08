@@ -1,11 +1,15 @@
 import { AiFillHome, AiFillMessage, BsFillBookmarksFill, IoNotifications, IoSettings } from 'react-icons/all';
 import { SidebarButton } from '~/components/shared/Sidebar/SidebarIconButton';
-import { PostInput } from '~/components/shared/Feed/PostInput';
 
-export const Sidebar = () => (
+type Props = {
+  notifyCount?: number;
+  messCount?: number;
+};
+
+export const Sidebar = ({ notifyCount, messCount }: Props) => (
   <>
-    <div className="drawer-mobile drawer flex flex-col">
-      <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+    {/*<div className="drawer-mobile drawer flex flex-col">*/}
+    <div className="drawer-mobile drawer hidden md:flex">
       {/*<div className="drawer-content flex flex-col items-center justify-center">*/}
       {/*  <label htmlFor="my-drawer-2" className="btn-primary drawer-button btn lg:hidden">*/}
       {/*    Open drawer*/}
@@ -18,13 +22,18 @@ export const Sidebar = () => (
             <AiFillHome className="h-8 w-8" />
           </SidebarButton>
           <div className="indicator">
-            <span className="badge-primary badge indicator-item cursor-default">2137</span>
+            {notifyCount ? (
+              <span className="badge-primary badge indicator-item cursor-default">{notifyCount}</span>
+            ) : (
+              ''
+            )}
+
             <SidebarButton tipText={'Notifications'}>
               <IoNotifications className="h-8 w-8" />
             </SidebarButton>
           </div>
           <div className="indicator">
-            <span className="badge-primary badge indicator-item cursor-default">934</span>
+            {messCount ? <span className="badge-primary badge indicator-item cursor-default">{messCount}</span> : ''}
             <SidebarButton tipText={'Messages'}>
               <AiFillMessage className="h-8 w-8" />
             </SidebarButton>
