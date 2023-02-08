@@ -53,9 +53,13 @@ export const PostInput = () => {
           </div>
           <div className="flex items-center justify-between py-2 pr-2">
             <div className="flex space-x-1 pl-0 sm:pl-2">
-              <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
+              <label
+                htmlFor="attachment"
+                className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary"
+              >
                 <RiAttachment2 className={'h-6 w-6'} />
-              </button>
+              </label>
+              <input id="attachment" type="file" className="hidden" />
               <button className="btn-ghost btn-square btn-sm btn inline-flex justify-center p-0 text-secondary">
                 <TbClipboardText className={'h-6 w-6'} />
               </button>
